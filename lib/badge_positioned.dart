@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_badge/badge_position.dart';
+import 'package:flutter_badged/badge_position.dart';
 
 /// The [BadgePositioned] represents position of badge in stack
 class BadgePositioned extends StatelessWidget {

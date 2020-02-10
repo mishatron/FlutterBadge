@@ -1,8 +1,8 @@
 library flutter_badge;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_badge/badge_position.dart';
-import 'package:flutter_badge/badge_positioned.dart';
+import 'package:flutter_badged/badge_position.dart';
+import 'package:flutter_badged/badge_positioned.dart';
 
 /// [FlutterBadge] class is needed to show some information about count
 class FlutterBadge extends StatefulWidget {
