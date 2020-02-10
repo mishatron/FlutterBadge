@@ -2,13 +2,35 @@
 
 Badge for showing with icon
 
-## Getting Started
+## How to use
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+This widget can be used anywhere, but example will be with bottom navigation.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Different cases of usage:
+
+```
+BadgedIcon(
+          icon: Icon(Icons.message),
+          borderRadius: 20.0,
+          itemCount: 3,
+        )
+```
+
+```
+BadgedIcon(
+          icon: Image.asset("assets/ic_message.png"),
+          hideZeroCount: false,
+          badgeColor: Colors.greenAccent,
+          itemCount: 15,
+        )
+```
+
+```
+BadgedIcon(
+          icon: Icon(Icons.home),
+          badgeColor: Colors.greenAccent,
+          badgeTextColor: Colors.red,
+          position: BadgePosition.bottomLeft(),
+          itemCount: 231,
+        )
+```
