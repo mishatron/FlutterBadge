@@ -9,7 +9,7 @@ This widget can be used anywhere, but example will be with bottom navigation.
 Different cases of usage:
 
 ```
-BadgedIcon(
+FlutterBadge(
           icon: Icon(Icons.message),
           borderRadius: 20.0,
           itemCount: 3,
@@ -17,7 +17,7 @@ BadgedIcon(
 ```
 
 ```
-BadgedIcon(
+FlutterBadge(
           icon: Image.asset("assets/ic_message.png"),
           hideZeroCount: false,
           badgeColor: Colors.greenAccent,
@@ -26,7 +26,7 @@ BadgedIcon(
 ```
 
 ```
-BadgedIcon(
+FlutterBadge(
           icon: Icon(Icons.home),
           badgeColor: Colors.greenAccent,
           badgeTextColor: Colors.red,
