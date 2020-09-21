@@ -1,7 +1,10 @@
+## [1.0.2] - 21.09.2020
+
+* Added ability to use custom text style
+
 ## [1.0.1] - 03.06.2020
 
 * Added example and improved documentation
-
 
 ## [1.0.0] - 10.02.2020
 
