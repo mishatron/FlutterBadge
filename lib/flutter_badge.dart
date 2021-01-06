@@ -67,7 +67,7 @@ class FlutterBadgeState extends State<FlutterBadge> {
             borderRadius: BorderRadius.circular(widget.borderRadius));
     return Center(
       child: Stack(
-        overflow: Overflow.visible,
+        clipBehavior: Clip.none,
         children: [
           widget.icon,
           BadgePositioned(
