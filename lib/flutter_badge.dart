@@ -65,35 +65,33 @@ class FlutterBadgeState extends State<FlutterBadge> {
         ? null
         : RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(widget.borderRadius));
-    return Center(
-      child: Stack(
-        clipBehavior: Clip.none,
-        children: [
-          widget.icon,
-          BadgePositioned(
-            position: widget.position ?? BadgePosition.topRight(),
-            child: Material(
-                type: widget.itemCount < 10
-                    ? MaterialType.circle
-                    : MaterialType.card,
-                elevation: 2.0,
-                shape: border,
-                color: widget.badgeColor,
-                child: Padding(
-                  padding: widget.contentPadding,
-                  child: Text(
-                    widget.itemCount.toString(),
-                    style: widget.textStyle ??
-                        TextStyle(
-                          fontSize: widget.textSize,
-                          color: widget.badgeTextColor,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                )),
-          ),
-        ],
-      ),
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        widget.icon,
+        BadgePositioned(
+          position: widget.position ?? BadgePosition.topRight(),
+          child: Material(
+              type: widget.itemCount < 10
+                  ? MaterialType.circle
+                  : MaterialType.card,
+              elevation: 2.0,
+              shape: border,
+              color: widget.badgeColor,
+              child: Padding(
+                padding: widget.contentPadding,
+                child: Text(
+                  widget.itemCount.toString(),
+                  style: widget.textStyle ??
+                      TextStyle(
+                        fontSize: widget.textSize,
+                        color: widget.badgeTextColor,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+              )),
+        ),
+      ],
     );
   }
 }
