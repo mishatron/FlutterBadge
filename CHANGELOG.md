@@ -1,3 +1,6 @@
+## [2.0.0-nullsafety.0] - 24.05.2021.
+* Added nullsafety support, thanks @JEuler
+
 ## [1.0.3] - 06.01.2021
 * Removed deprecated `overflow` parameter
 
