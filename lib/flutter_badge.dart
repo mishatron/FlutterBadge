@@ -11,7 +11,7 @@ class FlutterBadge extends StatefulWidget {
   final Color badgeTextColor;
   final Widget icon;
   final bool hideZeroCount;
-  final TextStyle textStyle;
+  final TextStyle? textStyle;
   final double textSize;
   final double borderRadius;
   final BadgePosition? position;

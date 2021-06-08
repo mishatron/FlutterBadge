@@ -1,3 +1,6 @@
+## [2.0.1] - 08.06.2021.
+* Fixed nullsafety issue
+
 ## [2.0.0-nullsafety.0] - 24.05.2021.
 * Added nullsafety support, thanks @JEuler
 
