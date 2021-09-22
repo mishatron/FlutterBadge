@@ -11,10 +11,10 @@ class FlutterBadge extends StatefulWidget {
   final Color badgeTextColor;
   final Widget icon;
   final bool hideZeroCount;
-  final TextStyle textStyle;
+  final TextStyle? textStyle;
   final double textSize;
   final double borderRadius;
-  final BadgePosition position;
+  final BadgePosition? position;
   final EdgeInsets contentPadding;
 
   ///Constructor
@@ -28,9 +28,9 @@ class FlutterBadge extends StatefulWidget {
   ///[textSize] is optional, default - 12.0
   ///[contentPadding] is optional, default - 5.0 for all sides
   FlutterBadge(
-      {Key key,
-      @required this.itemCount,
-      @required this.icon,
+      {Key? key,
+      required this.itemCount,
+      required this.icon,
       this.hideZeroCount: true,
       this.badgeColor = Colors.red,
       this.badgeTextColor: Colors.white,
@@ -40,13 +40,6 @@ class FlutterBadge extends StatefulWidget {
       this.contentPadding = const EdgeInsets.all(5.0),
       this.textSize = 12.0})
       : assert(itemCount >= 0),
-        assert(borderRadius != null),
-        assert(badgeColor != null),
-        assert(badgeTextColor != null),
-        assert(contentPadding != null),
-        assert(icon != null),
-        assert(borderRadius != null),
-        assert(textSize != null),
         super(key: key);
 
   @override
@@ -61,7 +54,7 @@ class FlutterBadgeState extends State<FlutterBadge> {
     if (widget.hideZeroCount && widget.itemCount == 0) {
       return widget.icon;
     }
-    RoundedRectangleBorder border = widget.itemCount < 10
+    RoundedRectangleBorder? border = widget.itemCount < 10
         ? null
         : RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(widget.borderRadius));
