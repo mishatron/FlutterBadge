@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.photo_library),
               itemCount: 2,
             ),
-            onPressed: (){},
+            onPressed: () {},
           )
         ],
       ),
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            title: Text("Home"),
+              title: Text("Home"),
               icon: FlutterBadge(
                 icon: Icon(Icons.home),
                 itemCount: 3,

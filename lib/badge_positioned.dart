@@ -3,10 +3,11 @@ import 'package:flutter_badged/badge_position.dart';
 
 /// The [BadgePositioned] represents position of badge in stack
 class BadgePositioned extends StatelessWidget {
-  final Widget? child;
+  final Widget child;
   final BadgePosition? position;
 
-  const BadgePositioned({Key? key, this.position, this.child}) : super(key: key);
+  const BadgePositioned({Key? key, this.position, required this.child})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class BadgePositioned extends StatelessWidget {
       return Positioned(
         top: topRight.top,
         right: topRight.right,
-        child: child!,
+        child: child,
       );
     }
     return Positioned(
@@ -23,6 +24,6 @@ class BadgePositioned extends StatelessWidget {
         right: position!.right,
         bottom: position!.bottom,
         left: position!.left,
-        child: child!);
+        child: child);
   }
 }

@@ -1,3 +1,6 @@
+## [2.0.2] - 24.09.2021.
+* Removed Center widget to allow consumer control this
+
 ## [2.0.1] - 08.06.2021.
 * Fixed nullsafety issue
 
