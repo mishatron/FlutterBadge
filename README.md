@@ -1,4 +1,4 @@
-# flutter_badge
+# flutter_badged
 
 Badge for showing with icon
 

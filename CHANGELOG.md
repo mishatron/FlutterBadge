@@ -1,3 +1,6 @@
+## [2.0.3] - 18.10.2022.
+* Fixed documentation and small refactoring
+
 ## [2.0.2] - 24.09.2021.
 * Removed Center widget to allow consumer control this
 

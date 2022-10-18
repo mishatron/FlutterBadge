@@ -20,10 +20,11 @@ class BadgePositioned extends StatelessWidget {
       );
     }
     return Positioned(
-        top: position!.top,
-        right: position!.right,
-        bottom: position!.bottom,
-        left: position!.left,
-        child: child);
+      top: position?.top,
+      right: position?.right,
+      bottom: position?.bottom,
+      left: position?.left,
+      child: child,
+    );
   }
 }

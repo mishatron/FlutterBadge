@@ -27,19 +27,19 @@ class FlutterBadge extends StatefulWidget {
   ///[textStyle] is optional, default - null
   ///[textSize] is optional, default - 12.0
   ///[contentPadding] is optional, default - 5.0 for all sides
-  FlutterBadge(
-      {Key? key,
-      required this.itemCount,
-      required this.icon,
-      this.hideZeroCount: true,
-      this.badgeColor = Colors.red,
-      this.badgeTextColor: Colors.white,
-      this.borderRadius = 0.0,
-      this.position,
-      this.textStyle,
-      this.contentPadding = const EdgeInsets.all(5.0),
-      this.textSize = 12.0})
-      : assert(itemCount >= 0),
+  FlutterBadge({
+    Key? key,
+    required this.itemCount,
+    required this.icon,
+    this.hideZeroCount: true,
+    this.badgeColor = Colors.red,
+    this.badgeTextColor: Colors.white,
+    this.borderRadius = 0.0,
+    this.position,
+    this.textStyle,
+    this.contentPadding = const EdgeInsets.all(5.0),
+    this.textSize = 12.0,
+  })  : assert(itemCount >= 0),
         super(key: key);
 
   @override
@@ -65,24 +65,24 @@ class FlutterBadgeState extends State<FlutterBadge> {
         BadgePositioned(
           position: widget.position ?? BadgePosition.topRight(),
           child: Material(
-              type: widget.itemCount < 10
-                  ? MaterialType.circle
-                  : MaterialType.card,
-              elevation: 2.0,
-              shape: border,
-              color: widget.badgeColor,
-              child: Padding(
-                padding: widget.contentPadding,
-                child: Text(
-                  widget.itemCount.toString(),
-                  style: widget.textStyle ??
-                      TextStyle(
-                        fontSize: widget.textSize,
-                        color: widget.badgeTextColor,
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-              )),
+            type:
+                widget.itemCount < 10 ? MaterialType.circle : MaterialType.card,
+            elevation: 2.0,
+            shape: border,
+            color: widget.badgeColor,
+            child: Padding(
+              padding: widget.contentPadding,
+              child: Text(
+                widget.itemCount.toString(),
+                style: widget.textStyle ??
+                    TextStyle(
+                      fontSize: widget.textSize,
+                      color: widget.badgeTextColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+            ),
+          ),
         ),
       ],
     );

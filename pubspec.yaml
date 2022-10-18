@@ -1,6 +1,6 @@
 name: flutter_badged
 description: Badge for showing with icon. You can use it in the bottom menu, navigation drawer or in any place you want.
-version: 2.0.2
+version: 2.0.3
 homepage: https://github.com/mishatron/FlutterBadge
 
 environment:
